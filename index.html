@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather | App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+     
+        <div class="title">
+          <img src="./images/logo.jpg" alt="logo" class="logo">
+          <h3 class="brand">Weather</h3>
+        </div>
+
+         <div class="container">
+     
+      <div>
+      <h1 class="temp">16&#176;</h1>
+      <div class="city-time">
+        <h1 class="name">London</h1>
+        <small>
+          <span class="time">06:39</span>
+          -
+          <span class="date">Monday Sep 19</span>
+        </small>
+      </div>
+      <div class="weather">
+        <img
+          src="./icons/day/113.png"
+          alt="icon"
+          class="icon"
+          width="50"
+          height="50"
+        />
+        <span class="condition">Cloudy</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel">
+        <form id="locationInput">
+            <input type="text" class="search" placeholder="Search Location..." />
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <ul class="cities">
+            <li class="city">New York</li>
+            <li class="city">California</li>
+            <li class="city">Paris</li>
+            <li class="city">Tokyo</li>
+        </ul>
+        <ul class="details">
+            <h4>Weather Details</h4>
+            <li>
+                <span>Cloudy</span>
+                <span class="cloud">89%</span>
+            </li>
+            <li>
+                <span>Humidity</span>
+                <span class="humidity">64%</span>
+            </li>
+            <li>
+                <span>Wind</span>
+                <span class="wind">8km/h</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9e02513da3.js" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
